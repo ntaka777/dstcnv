@@ -1,0 +1,33 @@
+dstcnv - DST encoded DSDIFF to decoded DSDIFF file converter
+Copyright (c) 2017 by Takayuki Nakano
+ 
+This software is distributed under the GPL2 (GNU Public License v2.0).
+
+Test environments
+=================
+
+* macOS 10.13 + Xcode 9.2 + Command Line Tools
+* Windows 7 Home SP1(x86) + TDM-GCC 5.1.0/MinGW32 
+* CentOS 7 (3.10.0-693.el7.x86_64) + gcc 4.8.5
+
+How to compile
+==============
+
+% git clone https://github.com/ntaka777/dstcnv.git
+% cd dstcnv
+% make
+
+Command usage
+=============
+
+dstcnv [-q] [-o output-file] dst-encoded-dsdiff-file | -h | -V
+
+-q : Quiet mode (except errors)
+-o : Specify output filename (default: <input-filename>_dec.dff)
+-h : Print option help
+-V : Print version information
+
+-- 
+Takayuki Nakano
+E-mail : n-taka[atmark]bd6.so-net.ne.jp
+Twitter : taka_JRS
